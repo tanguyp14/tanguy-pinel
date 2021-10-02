@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI,CACH,gBAAgB,CCDL,IAAK",
+"sources": ["../home/_home.sass","../variables/_variables.sass"],
+"names": [],
+"file": "main-sass.css"
+}

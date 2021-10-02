@@ -2,3 +2,5 @@
 wp-config.php
 
 local-phpinfo.php
+
+wp-content/themes/tanguyp-child/style/.sass-cache/
