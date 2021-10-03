@@ -1,2 +1,5 @@
-<?php /* Template Name: Home_TMPL */ ?>
-<?php get_header(); ?>
+<?php /* Template Name: Home_TMPL */ 
+
+get_header();
+
+?>
