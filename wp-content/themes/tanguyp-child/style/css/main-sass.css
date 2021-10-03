@@ -1,22 +1,22 @@
 /*
 Error: Invalid mixin "======".
-        on line 18 of common/_header.sass
+        on line 19 of common/_header.sass
         from line 3 of main.sass
 
-13: #site-navigation
 14: 	background-color: white
 15: 
 16: <<<<<<< HEAD
-17: 	#primary-menu
-18: =======
-19: 	.primary-menu
-20: >>>>>>> master
-21: 		display: flex
-22: 		flex-direction: row
-23: 		align-content: center
+17: <<<<<<< HEAD
+18: 	#primary-menu
+19: =======
+20: 	.primary-menu
+21: >>>>>>> master
+22: =======
+23: 	.primary-menu
+24: >>>>>>> master
 
 Backtrace:
-common/_header.sass:18
+common/_header.sass:19
 main.sass:3
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:1119:in `parse_mixin_definition'
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.7.4/lib/sass/engine.rb:658:in `parse_line'
@@ -70,4 +70,4 @@ C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid mixin \"======\".\A         on line 18 of common/_header.sass\A         from line 3 of main.sass\A \A 13: #site-navigation\A 14: 	background-color: white\A 15: \A 16: <<<<<<< HEAD\A 17: 	#primary-menu\A 18: =======\A 19: 	.primary-menu\A 20: >>>>>>> master\A 21: 		display: flex\A 22: 		flex-direction: row\A 23: 		align-content: center"; }
+  content: "Error: Invalid mixin \"======\".\A         on line 19 of common/_header.sass\A         from line 3 of main.sass\A \A 14: 	background-color: white\A 15: \A 16: <<<<<<< HEAD\A 17: <<<<<<< HEAD\A 18: 	#primary-menu\A 19: =======\A 20: 	.primary-menu\A 21: >>>>>>> master\A 22: =======\A 23: 	.primary-menu\A 24: >>>>>>> master"; }
