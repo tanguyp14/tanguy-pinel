@@ -1,0 +1,13 @@
+
+# Docker-compose :
+
+UP :
+    docker-compose up -d
+
+STOP :
+    dokcer-compose down --volumes
+
+
+# SASS :
+
+    sass --watch --style compressed .\wp-content\themes\tanguyp-child\style\main.sass:.\wp-content\themes\tanguyp-child\style\css\main-sass.css
