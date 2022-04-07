@@ -1,1 +1,46 @@
-$bg-color : #20b853
+$red_cv: #EE6363
+$blue_cv: #10B09D
+$yellow_cv: #EFDF4B
+
+//Liste d'annimation sass
+
+// Mouvement Horizontal
+@keyframes trblm-vide-hor
+  0%
+    transform: translate(-10px)
+  100%
+    transform: translate(0px)
+@keyframes trblm-flat-hor
+  0%
+    transform: translate(-20px)
+  100%
+    transform: translate(0px)
+
+// Mouvement Vertical
+@keyframes trblm-vide-ver
+  0%
+    transform: translate(0,-10px)
+  100%
+    transform: translate(0,0px)
+@keyframes trblm-flat-ver
+  0%
+    transform: translate(0,-20px)
+  100%
+    transform: translate(0,0px)
+
+//Liste @mixin sass
+@mixin trblm
+  animation-direction: alternate-reverse
+  animation-iteration-count: infinite
+  animation-timing-function: ease-in-out
+
+@mixin shadow
+  content: ""
+  display: block
+  position: relative
+  top: -3px
+  left: -4px
+  width: 100%
+  height: 100%
+  outline: solid black 1px
+  outline-offset: -1px

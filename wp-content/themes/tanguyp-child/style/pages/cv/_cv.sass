@@ -1,14 +1,79 @@
 
 .page-template-template-cv
+    font-family: "Outfit"
     .site-branding
         display: none
     #cv
         display: flex
+        max-width: 595px
+        margin: auto
     #left
-        background-color: blue
+        background-color: #c0c0c0
         flex: 2
-        height: 30px
+        height: auto
+        padding: 28px 0 0 40px
     #right
-        background-color: red
+        background-color: #808080
         flex: 1
-        height: 30px
+        height: auto
+        padding: 21px 0 0 0
+        #pp
+            display: block
+            width: 145px
+            height: 171px
+            background: url("../../images/pp.jpg") center
+            background-size: 120%
+            background-position-x: 0px
+            background-position-y: -30px
+    h1
+        color: $red_cv
+        font-weight: bold
+        font-size: 40px
+        margin: 0 0 4px 0
+    h3
+        color: black
+        font-weight: normal
+        font-size: 24px
+        margin: 0 0 18px 0
+    p
+        color: #000000
+        font-weight: 300
+        font-size: 15px
+        width: 288px
+
+    #tiny_rec_blue
+        width: 114px
+        height: 11px
+        background-color: $blue_cv
+        animation: trblm-flat-hor 4s
+        @include trblm
+        &:before
+            @include shadow
+            animation: trblm-vide-hor 7s
+            @include trblm
+    .tiny_cir_yel
+        display: flex
+        width: 28px
+        position: relative
+        top: 72px
+        left: 132px
+        ul
+            list-style: none
+            margin: 0
+            padding: 0
+            + .right_cir
+                padding: 0 0 0 4px
+        li
+            list-style: none
+            width: 12px
+            height: 12px
+            margin-top: 4px
+            background-color: $yellow_cv
+            border-radius: 50%
+            animation: trblm-flat-ver 4s
+            @include trblm
+            &:before
+                border-radius: 50%
+                @include shadow
+                animation: trblm-vide-ver 5s
+                @include trblm
