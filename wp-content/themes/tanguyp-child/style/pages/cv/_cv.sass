@@ -1,6 +1,6 @@
 
 .page-template-template-cv
-    font-family: "Outfit"
+    font-family: 'Outfit', sans-serif
     .site-branding
         display: none
     #cv
@@ -30,6 +30,11 @@
         font-weight: bold
         font-size: 40px
         margin: 0 0 4px 0
+    h2
+        color: $red_cv
+        font-weight: 700
+        font-size: 25px
+        line-height: 32px
     h3
         color: black
         font-weight: normal
@@ -73,7 +78,9 @@
             animation: trblm-flat-ver 4s
             @include trblm
             &:before
+                -webkit-appearance: none
                 border-radius: 50%
+
                 @include shadow
                 animation: trblm-vide-ver 5s
                 @include trblm
