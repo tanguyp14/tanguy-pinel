@@ -7,18 +7,44 @@
         display: flex
         max-width: 595px
         margin: auto
+        outline: 1px darkgrey solid
     #left
-        background-color: #c0c0c0
-        flex: 2
+        max-width: 364px
         height: auto
         padding: 28px 0 0 40px
+        #exp_pro
+            .tiny_cir_yel
+                left: -42px
+                top: 32px
+        .lieu_exp
+            display: flex
+            p
+                margin: 0 10px 0 0px
+                font-weight: 300
+                font-size: 14px
+                display: inline-flex
+                align-items: center
+                text-align: center
+                color: black
+                &:first-child
+                    max-width: 99px
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 20px
+        .text_exp
+            p
+                width: 324px
+                font-style: normal
+                font-weight: 200
+                margin-top: 7px
+                font-size: 15px
+
     #right
-        background-color: #808080
-        flex: 1
         height: auto
         padding: 21px 0 0 0
         #pp
             display: block
+            margin-right: 73px
             width: 145px
             height: 171px
             background: url("../../images/pp.jpg") center
@@ -35,13 +61,22 @@
         font-weight: 700
         font-size: 25px
         line-height: 32px
+        margin: 0px
     h3
         color: black
         font-weight: normal
         font-size: 24px
         margin: 0 0 18px 0
+    h5
+        color: black
+        font-weight: 700
+        font-size: 16px
+        line-height: 20px
+        margin-top: 9px
+        margin-bottom: 4px
     p
         color: #000000
+        white-space: break-spaces
         font-weight: 300
         font-size: 15px
         width: 288px
@@ -66,8 +101,10 @@
             list-style: none
             margin: 0
             padding: 0
+            position: absolute
             + .right_cir
                 padding: 0 0 0 4px
+                margin-left: 12px
         li
             list-style: none
             width: 12px
