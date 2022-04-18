@@ -49,6 +49,10 @@ get_header();
                 </div>
             <?php endif ?>
         </div>
+        <div id="comp">
+            <h2>Compétences liées au web</h2>
+            <p><?php the_field('comp'); ?></p>
+        </div>
     </div>
     <div id="right">
         <div id="pp">
@@ -60,6 +64,27 @@ get_header();
                     <?php echo str_repeat("<li></li>", 8); ?>
                 </ul>
             </div>
+        </div>
+        <div id="contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li id="adress"><?php the_field('adresse') ?></li>
+                    <li id="phone"><?php the_field('telephone') ?></li>
+                    <li id="mail">
+                        <a href="mailto:<?php the_field('mail') ?>">
+                        <?php the_field('mail') ?></a>
+                    </li>
+                </ul>
+                <h4>Diplômes & Études</h4>
+                <p><?php the_field('etudes') ?></p>
+                <h4>Plus !</h4>
+                <ul>
+                    <li id="ang"><?php the_field('anglais') ?></li>
+                    <li id="jap"><?php the_field('japonais') ?></li>
+                    <li id="car"><?php the_field('voiture') ?></li>
+                </ul>
+                <h4>Hobbies</h4>
+                <p><?php the_field('hobbies') ?></p>
         </div>
     </div>
 </span>

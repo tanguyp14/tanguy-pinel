@@ -16,29 +16,34 @@
             .tiny_cir_yel
                 left: -42px
                 top: 32px
-        .lieu_exp
-            display: flex
-            p
-                margin: 0 10px 0 0px
-                font-weight: 300
-                font-size: 14px
-                display: inline-flex
-                align-items: center
-                text-align: center
-                color: black
-                &:first-child
-                    max-width: 99px
-                    font-weight: 400
-                    font-size: 16px
-                    line-height: 20px
-        .text_exp
+            .lieu_exp
+                display: flex
+                p
+                    margin: 0 10px 0 0px
+                    font-weight: 300
+                    font-size: 14px
+                    display: inline-flex
+                    align-items: center
+                    color: black
+                    &:first-child
+                        max-width: 99px
+                        font-weight: 400
+                        font-size: 16px
+                        line-height: 20px
+            .text_exp
+                p
+                    width: 324px
+                    font-style: normal
+                    font-weight: 200
+                    margin-top: 7px
+                    font-size: 15px
+        #comp
             p
                 width: 324px
                 font-style: normal
                 font-weight: 200
                 margin-top: 7px
                 font-size: 15px
-
     #right
         height: auto
         padding: 21px 0 0 0
@@ -51,6 +56,68 @@
             background-size: 120%
             background-position-x: 0px
             background-position-y: -30px
+        #contact
+            h4
+                &:first-child
+                    margin: 11px 0 7px 0
+            ul
+                display: flex
+                flex-direction: column
+                margin: 0
+                padding: 0
+                li
+                    color: black
+                    font-weight: 400
+                    font-size: 12px
+                    list-style-type: none
+                    line-height: 25px
+                    display: inline-flex
+                    align-items: center
+                    &:hover::before
+                        animation-name: hover-wriggle
+                        animation-duration: 2s
+                        @include trblm
+                    a
+                        text-decoration: none
+                        color: inherit
+                        &:hover
+                            color: $blue_cv
+                    &::before
+                        display: block
+                        content: ""
+                        width: 17px
+                        height: 17px
+                        margin-right: 8px
+                        position: relative
+                        align-items: center
+                        background-size: contain
+                    &#adress
+                        &::before
+                            background-image: url('../../images/adress.png')
+                    &#phone
+                        &::before
+                            background-image: url('../../images/phone.png')
+                    &#mail
+                        &::before
+                            background-image: url('../../images/mail.png')
+                    &#ang
+                        &::before
+                            background-image: url('../../images/ang.png')
+                    &#jap
+                        &::before
+                            background-image: url('../../images/jap.png')
+                    &#car
+                        &::before
+                            background-image: url('../../images/car.png')
+            
+            
+            
+            p
+                color: black
+                font-weight: 400
+                font-size: 12px
+                line-height: 25px
+
     h1
         color: $red_cv
         font-weight: bold
@@ -67,6 +134,13 @@
         font-weight: normal
         font-size: 24px
         margin: 0 0 18px 0
+    h4
+        color: $red_cv
+        font-weight: 700
+        font-size: 20px
+        line-height: 25px
+        margin-bottom: 15px
+        margin-top: 26px
     h5
         color: black
         font-weight: 700
