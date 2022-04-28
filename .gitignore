@@ -9,6 +9,7 @@ wp-content/*
 
 # ignore wp-admin
 wp-admin/*
+wp-includes/*
 
 # ignore these plugins
 wp-content/plugins/hello.php
