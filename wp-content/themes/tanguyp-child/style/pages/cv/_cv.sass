@@ -117,7 +117,12 @@
                 line-height: 25px
                 margin-bottom: 0
                 margin-top: 15px
-
+    #tiny_line_up
+        display: block
+        width: 50px
+        height: 2px
+        background-color: $yellow_cv
+        
     h1
         color: $red_cv
         font-weight: bold
@@ -158,6 +163,15 @@
     #tiny_rec_blue
         width: 114px
         height: 11px
+
+    #big_rec_blue
+        width: 60px
+        height: 109px
+        position: relative
+        top: -70px
+        left: 200px
+
+    #tiny_rec_blue, #big_rec_blue
         background-color: $blue_cv
         animation: trblm-flat-hor 4s
         @include trblm
@@ -165,6 +179,7 @@
             @include shadow
             animation: trblm-vide-hor 7s
             @include trblm
+
     .tiny_cir_yel
         display: flex
         width: 28px

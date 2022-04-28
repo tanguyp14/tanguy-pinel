@@ -3,6 +3,7 @@ get_header();
 ?>
 
 <span id="cv">
+    <div id="tiny_line_up"></div>
     <div id="left">
         <div id="presentation">
             <h1>
@@ -94,5 +95,6 @@ get_header();
                 <p><?php the_field('hobbies') ?></p>
             </div>
         </div>
+        <div id="big_rec_blue"></div>
     </div>
 </span>
