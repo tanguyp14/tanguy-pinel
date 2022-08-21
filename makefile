@@ -1,12 +1,9 @@
-
 # Docker-compose :
-
+build:
+	docker-compose up -d && npm install
 up:
 	docker-compose up -d
 stop:
-	docker-compose stop 
-
-# SASS:
-	# sass --watch --style compressed .\wp-content\themes\tanguyp-child\style\main.sass:.\wp-content\themes\tanguyp-child\style\css\main-sass.css
-sass_watch:
-	sass --watch --style compressed ./wp-content/themes/tanguyp-child/style/main.sass:./wp-content/themes/tanguyp-child/style/css/main-sass.css
+	docker-compose stop
+style:
+	npm run watch
